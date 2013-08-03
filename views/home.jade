@@ -1,0 +1,75 @@
+doctype 5
+html(lang="en")
+	head
+		title The Example API
+		meta(charset="UTF-8")
+		
+		style
+			body {
+				font-family: monospace;
+				background: blue;
+				color: #aaa;
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				font-size: 16px;
+				line-height: 1.4
+			}
+
+			.text {
+				margin: -100px auto 10px;
+				max-width: 40em;
+				position: relative;
+				top: 50%;
+				box-sizing: border-box;
+				padding: 1em;
+				text-align: center;
+			}
+
+			span {
+				text-align: left;
+				display: inline-block;
+				width: 100%;
+			}
+
+			.header {
+				color: blue;
+				background: #aaa;
+				display: inline-block;
+				text-align: center;
+				width: auto;
+				padding: 0 0.25em;
+			}
+
+			.center {
+				display: inline-block;
+				width:100%;
+				text-align: center;
+			}
+
+	body
+		.text
+			span.header Windows
+			br
+			br
+			span A fatal exception 0E has occurred at 0028:C0011E36 in VXD VMM(01) +
+			br
+			span 00010E36.  The current application will be terminated.
+			br
+			br
+			span *   Press any key to terminate the current application.
+			br
+			span *   Press CTRL+ALT+DEL again to restart your computer. You will
+			br
+			span lose any unsaved information in all applications.
+			br
+			br
+			span.center Press any key to continue _
+
+		script
+			document.body.onkeydown = function() {
+				var c = confirm('false');
+			};
+
+		script
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-39960550-3', 'exampleapi.com'); ga('send', 'pageview');
